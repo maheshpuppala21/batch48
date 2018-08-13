@@ -1,0 +1,16 @@
+INFO:root:INFO Message
+ERROR:root:error Message
+WARNING:root:warning Message
+DEBUG:root:debug Message
+INFO:root:INFO Message
+ERROR:root:error Message
+WARNING:root:warning Message
+DEBUG:root:debug Message
+2018-08-10 21:29:50,125-->INFO==>INFO Message
+2018-08-10 21:29:50,125-->ERROR==>error Message
+2018-08-10 21:29:50,125-->WARNING==>warning Message
+2018-08-10 21:29:50,125-->DEBUG==>debug Message
+2018-08-10 21:31:56,226-->INFO==>INFO Message
+2018-08-10 21:31:56,226-->ERROR==>error Message
+2018-08-10 21:31:56,226-->WARNING==>warning Message
+2018-08-10 21:31:56,226-->DEBUG==>debug Message

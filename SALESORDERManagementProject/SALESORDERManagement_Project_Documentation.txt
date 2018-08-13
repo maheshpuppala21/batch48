@@ -1,0 +1,91 @@
+===============================SALES ORDER MANAGEMENT========================pyhtonsales.py=====================================================-==============================
+
+ Welcome to SALES management
+          1. login
+		  2. Register
+		  3. Quit
+		  
+if user says 1
+
+  1. Login                            2. Register                         3. Quit
+  Login page                        Registration page 
+  --------------                    ------------------                    Quit the program
+  Enter user name:                 Name:
+  Enter password:                 pin code:
+                                  city:
+								  state:
+								  country:
+								  email:
+								  phone:
+								  password:
+		
+===========		
+Database:
+===========
+
+2.For Register, store details in below table
+Table Name: CUSTOMER table								 https://github.com/sambapython/batch48/blob/master/CRUD/db_structure.py
+ColumnNames:  Name VARCHAR2(50),
+              pin code NUMBER,
+			  city VARCHAR2(20),
+			  state VARCHAR2(20),
+			  country VARCHAR2(20),
+			  email VARCHAR2(30),
+			  phone VARCHAR2(10),
+			  password VARCHAR2(20),
+			  creat_ts date,
+			  role VARCHAR2(10)  (value are "CUSTOMER" or "ADMIN")
+			  
+--While inserting registration details in to database (customer table) , things to remember
+i)the password should be stored in encrypted format. (encode fun)
+ii)take current time stamp in to creat_ts column(registration date and time)
+iii) we need to create ADMIN user from Database back end only.
+
+
+
+===========================================
+
+1.
+
+it should show  Login Page with (line)
+and enter username and password 
+--once we take user name and password from login section, you will  need to encrypt the password.(we need to validate in db with encrypted passoword)
+
+   if details are not valid, we need to show menu for user as "Login page with error message "login failed"
+      if login failed:                                                           if login Success:
+	       enter q for quit                                                                show message "Login Success"
+		   1 login again                                                   		   if role is "CUSTOMER"
+		   2. main menu                                                                    1. Sales order create
+		        if main menu, it should show                                                2. Reports	3.Quit			                                                                          
+				    1.Login page                                                       if role is ADMIN:
+					2. Registration                                                          1. PRODUCT CREATE
+					                                                                          2.Reports
+																							  3. Quit
+																							  
+																							  
+Note:
+
+if login failed, if customer enters q(shows message as "say bye to user")
+
+ if customer enters 1.Login again ( enter user name and password)
+ 
+ if customer enters main menu i.e, 2, (go to main menu)
+ 
+ 
+ ===============================================
+ 
+ ADMIN
+ 
+ 1. PRODCUTS
+ 
+ 
+ DB tables: (PRODUCTS table)
+   name of product , sales price  , category, create date, status
+   
+if ADMIN select products then need to show  below    
+   1.CREATE
+   2.UPDATE
+   3.DELETE
+
+																							  
+																							  
